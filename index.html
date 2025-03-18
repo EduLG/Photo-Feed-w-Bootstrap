@@ -23,8 +23,6 @@
 
     <body>
 
-        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        
         <!--TOP NAVIGATION HORIZONTAL BAR-->
         <nav class="navbar navbar-light bg-light py-3">
             <div class="container-fluid">
@@ -77,7 +75,7 @@
 
         <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         
-        <!--MODAL WINDOW SCRIPT FOR GREEN BUTTON-->
+        <!--MODAL WINDOW FOR GREEN BUTTON-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
             <div class="modal-dialog">
@@ -127,104 +125,142 @@
         <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         
         <!--MENU VIEW SELECTION-->
-        <div class="container-fluid">
+        <div class="container-fluid p-2" >
             <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
 
-                <!--3 IN A ROW-->
+                <!--GRID-->
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="grid" data-bs-toggle="tab" data-bs-target="#grid-pane" type="button" role="tab" aria-controls="home" aria-selected="true">
-                    <i class="fa-solid fa-table-cells"></i></a>
+                    <button class="nav-link active" id="grid" data-bs-toggle="tab" data-bs-target="#grid-pane" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i></button>
                 </li>
 
-                <!--ONE IN A ROW-->
+                <!--SCROLL-->
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="flow" data-bs-toggle="tab" data-bs-target="#flow-pane" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                    <i class="fa-regular fa-square"></i></a>
+                    <button class="nav-link" id="flow" data-bs-toggle="tab" data-bs-target="#flow-pane" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <i class="fa-regular fa-square"></i></button>
                 </li>
 
             </ul>
 
             <div class="tab-content" id="myTabContent">
 
-                <!--3 BY 3 PICTURE GRID-->
+                <!--GRID-->
                 <div class="tab-pane fade show active" id="grid-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
+                    <!--FIRST ROW-->
+                    <div class="row pt-4 px-4">
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/5657416/pexels-photo-5657416.jpeg" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+    
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/38242/pexels-photo-38242.jpeg" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+    
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/7335195/pexels-photo-7335195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                    </div> 
+                    <!--SECOND ROW-->
+                    <div class="row pt-4 pr-4 px-4">
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/47356/freerider-skiing-ski-sports-47356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/414247/pexels-photo-414247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/11303367/pexels-photo-11303367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+    
+                    <!--THIRD ROW-->
+                    <div class="row pt-4 pr-4 px-4">
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/163228/paragliding-mountains-sport-paraglider-163228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/27600453/pexels-photo-27600453/free-photo-of-carretera-paisaje-naturaleza-montana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col">
+                            <img 
+                            style="height: 30vw; object-fit: cover;" 
+                            src="https://images.pexels.com/photos/1645028/pexels-photo-1645028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
                 </div>
 
-                <!--CLASSIC SCROLLING MODE-->
+                <!--SCROLL-->
                 <div class="tab-pane fade" id="flow-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-2">
+                                <div class="w-100 fs-4">Skating is quite cool!</div>
+                                <small class="align-bottom">14/04</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://images.pexels.com/photos/5657416/pexels-photo-5657416.jpeg" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="p-2">
+                                <strong>Sk8 Likes</strong>
+                                <p>Even the likes here get a bit skaty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-2">
+                                <div class="w-100 fs-4">Windsurfing as an alternative</div>
+                                <small>26/07</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://images.pexels.com/photos/414247/pexels-photo-414247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="p-2">
+                                <strong>Many Likes</strong>
+                                <p>There are many more interesting sports than surfing, for god's sake!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-6 mx-auto border rounded p-0">
+                            <div class="d-flex p-2">
+                                <div class="w-100 fs-4">Snowboarding</div>
+                                <small>12/12</small>
+                            </div>
+                            <img style="object-fit: cover;" src="https://images.pexels.com/photos/38242/pexels-photo-38242.jpeg" class="img-fluid w-100 col-12" alt=""/>
+                            <div class="p-2">
+                                <strong>Even more Likes</strong>
+                                <p>Look how cool is snowboarding. Much more interesting than surfing for sure...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-        </div>
-        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        
-        <div class="row">
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/5657416/pexels-photo-5657416.jpeg" 
-                class="img-fluid w-100" alt="">
-            </div>
-
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/38242/pexels-photo-38242.jpeg" 
-                class="img-fluid w-100" alt="">
-            </div>
-
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/7335195/pexels-photo-7335195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-        </div> 
-
-        <div class="row">
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/47356/freerider-skiing-ski-sports-47356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/414247/pexels-photo-414247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/11303367/pexels-photo-11303367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/163228/paragliding-mountains-sport-paraglider-163228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/27600453/pexels-photo-27600453/free-photo-of-carretera-paisaje-naturaleza-montana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
-            <div class="col">
-                <img 
-                style="height: 30vw; object-fit: cover;" 
-                src="https://images.pexels.com/photos/1645028/pexels-photo-1645028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                class="img-fluid w-100" alt="">
-            </div>
         </div>
 
     </body>
+
 </html>
